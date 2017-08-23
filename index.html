@@ -1,0 +1,203 @@
+<!-- copy meta tags from old site -->
+<br>
+<div class="wrapper"> 
+  <h1 id="header">
+    noam hacker's web presence
+  </h1>
+  <br>
+  <h1 id="solarize" onclick="solarize()">
+    &#9728;
+  </h1>
+</div>
+<div class="wrapper">    
+  <div id="content">
+    <a class="reg content1 accent1" target="_blank" href="">email</a
+    ><a class="reg content1 accent1" target="_blank" href="">github</a
+    ><a class="reg content1 accent1" target="_blank" href="">linkedin</a
+    ><a class="reg content1 accent1" target="_blank" href="">instagram</a
+    ><a class="reg content1 accent1" target="_blank" href="">devpost</a
+    ><a class="reg content1 accent1" target="_blank" href="">stackoverflow</a
+    ><a class="reg content1 accent1" target="_blank" href="">chromewebstore</a
+    ><a class="reg content1 accent1" target="_blank" href="">vimeo</a
+    ><a class="reg content1 accent1" target="_blank" href="">twitter</a
+    ><a class="reg content1 accent1" target="_blank" href="">hackernews</a
+    ><a class="reg content1 accent1" target="_blank" href="">gigography</a
+    ><a class="reg content1 accent1" target="_blank" href="">strava</a
+    ><a class="reg content1 accent1" target="_blank" href="">graphicdesign</a
+    ><a class="reg content1 accent1" target="_blank" href="">podcasts</a
+    ><a class="reg content1 accent1" target="_blank" href="">youtube</a
+    ><a class="reg content1 accent1" target="_blank" href="">developerstory</a
+    ><a class="reg content1 accent1" target="_blank" href="">meetup</a
+    ><a class="reg content1 accent1" target="_blank" href="https://soundcloud.com/normhacker">soundcloud</a
+    ><a class="reg content1 accent1" target="_blank" href="">songkick</a
+    ><a class="reg content1 accent1" target="_blank" href="">oldwebsite</a>
+  </div>
+</div>
+<br>
+
+<style>
+  @import url('https://fonts.googleapis.com/css?family=Quicksand:300,400');
+  .wrapper {
+    text-align: center;
+  }
+  #header {
+    display: inline-block;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 4vmin;
+  }
+  #solarize {
+    display: inline-block;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 4vmin;
+    cursor: pointer;
+  }
+  #content {
+    display: inline-block;
+    word-wrap: break-word;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 7vmin;
+    width: 90%;
+    /*box-shadow: 10px 10px 50px #888888;*/
+    padding: 15px;
+  }
+  a {
+    text-decoration: none;
+    color: lightgray;
+  }
+  a:hover {
+    color: gray;
+  }
+
+  .content1 {
+    color: 586e75;
+  }
+  .content2 {
+    color: 657b83;
+  }
+  .content3 {
+    color: 839496;
+  }
+  .content4 {
+    color: 93a1a1;
+  }
+  .accent1:hover {
+    color: b58900;
+  }
+  .accent2:hover {
+    color: cb4b16;
+  }
+  .accent3:hover {
+    color: dc322f;
+  }
+  .accent4:hover {
+    color: d33682;
+  }
+  .accent5:hover {
+    color: 6c71c4;
+  }
+  .accent6:hover {
+    color: 268bd2;
+  }
+  .accent7:hover {
+    color: 859900;
+  }
+
+
+  /* mobile-only additions */
+  @media all and (min-width:960px) and (max-width: 1024px) {
+    a.reg::after {
+      content: ".";
+      color: #2aa198;
+      font-family: 'Quicksand', sans-serif;
+      font-weight: bold;
+    }
+  }
+  @media all and (min-width:801px) and (max-width: 959px) {
+    a.reg::after {
+      content: ".";
+      color: #2aa198;
+      font-family: 'Quicksand', sans-serif;
+      font-weight: bold;
+    }
+  }
+  @media all and (min-width:769px) and (max-width: 800px) {
+    a.reg::after {
+      content: ".";
+      color: #2aa198;
+      font-family: 'Quicksand', sans-serif;
+      font-weight: bold;
+    }
+  }
+  @media all and (min-width:569px) and (max-width: 768px) {
+    a.reg::after {
+      content: ".";
+      color: #2aa198;
+      font-family: 'Quicksand', sans-serif;
+      font-weight: bold;
+    }
+  }
+  @media all and (min-width:481px) and (max-width: 568px) {
+    a.reg::after {
+      content: ".";
+      color: #2aa198;
+      font-family: 'Quicksand', sans-serif;
+      font-weight: bold;
+    }
+  }
+  @media all and (min-width:321px) and (max-width: 480px) {
+    a.reg::after {
+      content: ".";
+      color: #2aa198;
+      font-family: 'Quicksand', sans-serif;
+      font-weight: bold;
+    }
+  }
+  @media all and (min-width:0px) and (max-width: 320px) {
+    a.reg::after {
+      content: ".";
+      color: #2aa198;
+      font-family: 'Quicksand', sans-serif;
+      font-weight: bold;
+    }
+  }
+  </style>
+
+  <script>
+    // colour scheme from: http://ethanschoonover.com/solarized
+    accentColorClass = "accent1"
+    contentToneClass = "content1"
+    
+    backgroundTones = ["002b36", "073642", "eee8d5", "fdf6e3"]
+    contentTones = ["586e75", "657b83", "839496", "93a1a1"]
+    accentColors = ["b58900", "cb4b16", "dc322f", "d33682", "6c71c4", "268bd2", "859900"]
+
+    solarize()
+    function solarize() {
+      links = document.getElementsByClassName("reg")
+
+      for (i=0; i<links.length; i++) {
+        links[i].classList.remove(contentToneClass)
+        links[i].classList.remove(accentColorClass)
+      }
+
+      backgroundTone = backgroundTones[Math.floor(Math.random()*backgroundTones.length)]
+      accentRand = (Math.floor(Math.random()*7)+1)
+      accentColorClass = "accent"+accentRand
+      contentToneClass = "content"+(Math.floor(Math.random()*4)+1)
+
+      document.body.style.backgroundColor = "#"+backgroundTone
+      document.getElementById("header").style.color = accentColors[accentRand-1]
+      document.getElementById("solarize").style.color = accentColors[accentRand-1]
+
+      for (i=0; i<links.length; i++) {
+        links[i].classList.add(contentToneClass)
+        links[i].classList.add(accentColorClass)
+      }
+    }
+  </script>
