@@ -5,14 +5,13 @@
     noam hacker's web presence
   </h1>
   <br>
-  <h1 id="solarize" onclick="solarize()">
+  <h1 id="solarize" onclick="solarize()" class="spin">
     &#9728;
   </h1>
 </div>
 <div class="wrapper">    
   <div id="content">
-    <a class="reg content1 accent1" target="_blank" href="">email</a
-    ><a class="reg content1 accent1" target="_blank" href="">github</a
+     <a class="reg content1 accent1" target="_blank" href="">github</a
     ><a class="reg content1 accent1" target="_blank" href="">linkedin</a
     ><a class="reg content1 accent1" target="_blank" href="">instagram</a
     ><a class="reg content1 accent1" target="_blank" href="">devpost</a
@@ -31,6 +30,10 @@
     ><a class="reg content1 accent1" target="_blank" href="https://soundcloud.com/normhacker">soundcloud</a
     ><a class="reg content1 accent1" target="_blank" href="">songkick</a
     ><a class="reg content1 accent1" target="_blank" href="">oldwebsite</a>
+    <br><br>
+    <div class="wrapper"> 
+      <h1 id="footer">nhacker95@gmail.com</h1>
+    </div>
   </div>
 </div>
 <br>
@@ -40,12 +43,15 @@
   .wrapper {
     text-align: center;
   }
-  #header {
+  #header, #footer {
     display: inline-block;
     font-family: 'Quicksand', sans-serif;
     font-weight: 400;
     text-transform: uppercase;
     font-size: 4vmin;
+  }
+  #footer {
+    text-transform: lowercase;
   }
   #solarize {
     display: inline-block;
@@ -166,6 +172,33 @@
       font-weight: bold;
     }
   }
+
+  @-moz-keyframes spin {
+    from { -moz-transform: rotate(0deg); }
+    to { -moz-transform: rotate(360deg); }
+  }
+  @-webkit-keyframes spin {
+    from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(360deg); }
+  }
+  @keyframes spin {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+  }
+  .spin {
+    -webkit-animation-name: spin;
+    -webkit-animation-duration: 4000ms;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: spin;
+    -moz-animation-duration: 4000ms;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -ms-animation-name: spin;
+    -ms-animation-duration: 4000ms;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+  }
   </style>
 
   <script>
@@ -193,6 +226,7 @@
 
       document.body.style.backgroundColor = "#"+backgroundTone
       document.getElementById("header").style.color = accentColors[accentRand-1]
+      document.getElementById("footer").style.color = accentColors[accentRand-1]
       document.getElementById("solarize").style.color = accentColors[accentRand-1]
 
       for (i=0; i<links.length; i++) {
